@@ -5,6 +5,7 @@ const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 require("dotenv").config();
+const mongoUri = process.env.MONGODB_URI || "mongodb://localhost:27017";
 
 //middlewres
 app.use(cors());
